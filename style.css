@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* Colors */
+
+	--color-primary-1: rgb(206, 227, 233);
+	--color-primary-1: rgb(82, 255, 168);
+
+	--color-secondary-1: rgb(78, 93, 115);
+	--color-secondary-1: rgb(50, 58, 73);
+	--color-secondary-1: rgb(31, 38, 50);
+
+	/* Font-size */
+
+	--font-size-1: 28px;
+}
+html {
+	font-size: 62.5%;
+}
+/* # Front-end Style Guide
+
+- Mobile: 375px
+- Desktop: 1440px
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800
+
+*/
+/* <div id="advice">
+<h1 class="advice__header">
+  ADVICE <span class="header-number">#1117</span>
+</h1>
+
+<p class="advice__text">
+  "It is easy to sit up and take notice, what's difficult is
+  getting up and taking action"
+</p>
+<span class="pause">=</span>
+</div>
+*/

@@ -10,15 +10,16 @@
 	/* Colors */
 
 	--color-primary-1: rgb(206, 227, 233);
-	--color-primary-1: rgb(82, 255, 168);
+	--color-primary-2: rgb(82, 255, 168);
 
 	--color-secondary-1: rgb(78, 93, 115);
-	--color-secondary-1: rgb(50, 58, 73);
-	--color-secondary-1: rgb(31, 38, 50);
+	--color-secondary-2: rgb(50, 58, 73);
+	--color-secondary-3: rgb(31, 38, 50);
 
+	--white: white;
 	/* Font-size */
 
-	--font-size-1: 28px;
+	--font-size-1: 2.7rem;
 }
 html {
 	font-size: 62.5%;
@@ -32,6 +33,24 @@ html {
 - Weights: 800
 
 */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+body {
+	background-color: var(--color-secondary-3);
+	height: 100vh;
+	max-height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 /* <div id="advice">
 <h1 class="advice__header">
   ADVICE <span class="header-number">#1117</span>
@@ -44,3 +63,44 @@ html {
 <span class="pause">=</span>
 </div>
 */
+#advice {
+	padding: 50px;
+	background-color: var(--color-secondary-2);
+	border-radius: 15px;
+	text-align: center;
+	width: 455px;
+	position: relative;
+}
+
+.advice__header {
+	color: var(--color-primary-2);
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+.advice__text {
+	font-size: var(--font-size-1);
+	padding-block: 32px;
+	color: var(--white);
+	text-align: center;
+}
+
+.pause {
+	display: block;
+	padding: 10px;
+}
+
+.btn {
+	border: none;
+	outline: none;
+	position: absolute;
+	padding: 20px;
+	border-radius: 50%;
+	background-color: var(--color-primary-2);
+	left: 43%;
+	bottom: -12%;
+	transition: box-shadow 0.2s ease-out;
+}
+
+.btn:hover {
+	box-shadow: 0 0 30px var(--color-primary-2);
+}

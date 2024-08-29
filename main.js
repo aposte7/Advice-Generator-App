@@ -1,3 +1,3 @@
 import "./style.css"
-
-setupCounter(document.querySelector("#counter"))
+import init from "./js/controller"
+init()

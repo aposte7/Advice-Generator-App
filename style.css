@@ -41,6 +41,7 @@ a {
 img {
 	height: auto;
 	width: 100%;
+	object-fit: cover;
 }
 body {
 	background-color: var(--color-secondary-3);
@@ -86,7 +87,7 @@ body {
 
 .pause {
 	display: block;
-	padding: 10px;
+	padding-block: 10px;
 }
 
 .btn {

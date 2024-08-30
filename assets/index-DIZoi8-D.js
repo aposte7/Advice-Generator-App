@@ -8,12 +8,12 @@ var l=Object.defineProperty;var u=(r,e,n)=>e in r?l(r,e,{enumerable:!0,configura
                 ${this._data.advice}
             </p>
             <span class="pause">
-                <img src="../advice-generator/images/pattern-divider-desktop.svg"
+                <img src="../images/pattern-divider-desktop.svg"
                     alt="Description of SVG"/>
             </span>
             <form class="form">
                 <button class="btn">
-                    <img src="../advice-generator/images/icon-dice.svg" alt="Description of SVG" />
+                    <img src="../images/icon-dice.svg" alt="Description of SVG" />
                 </button>
             </form>
         </div>

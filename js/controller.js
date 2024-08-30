@@ -1,6 +1,6 @@
-import { fetchAdvice } from "./model"
-import AddAdvice from "./view/advice-view"
-import { API_URL } from "./config"
+import { fetchAdvice } from "/js/model"
+import AddAdvice from "/js/view/advice-view"
+import { API_URL } from "/js/config"
 
 const controlAdvice = async function () {
 	const url = `${API_URL}/advice`

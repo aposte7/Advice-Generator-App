@@ -20,12 +20,12 @@ class AddAdvice {
                 ${this._data.advice}
             </p>
             <span class="pause">
-                <img src="/images/pattern-divider-desktop.svg"
+                <img src="/advice-generator/images/pattern-divider-desktop.svg"
                     alt="Description of SVG"/>
             </span>
             <form class="form">
                 <button class="btn">
-                    <img src="/images/icon-dice.svg" alt="Description of SVG" />
+                    <img src="/advice-generator/images/icon-dice.svg" alt="Description of SVG" />
                 </button>
             </form>
         </div>

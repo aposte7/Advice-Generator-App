@@ -19,7 +19,8 @@ function updateURLWithAdviceId(id) {
 }
 
 const init = function () {
+	console.log("init")
 	AddAdvice.addHandlerRender(controlAdvice)
 }
 
-export default init
+init()

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 *,
 *::after,
 *::before {
@@ -16,7 +18,6 @@
 	--color-secondary-2: rgb(50, 58, 73);
 	--color-secondary-3: rgb(31, 38, 50);
 
-	--white: white;
 	/* Font-size */
 
 	--font-size-1: 2.7rem;
@@ -46,43 +47,40 @@ img {
 body {
 	background-color: var(--color-secondary-3);
 	height: 100vh;
+	font-family: "Manrope", sans-serif;
+}
+
+#root {
+	height: 100%;
 	max-height: fit-content;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-/* <div id="advice">
-<h1 class="advice__header">
-  ADVICE <span class="header-number">#1117</span>
-</h1>
-
-<p class="advice__text">
-  "It is easy to sit up and take notice, what's difficult is
-  getting up and taking action"
-</p>
-<span class="pause">=</span>
-</div>
-*/
 #advice {
 	padding: 50px;
 	background-color: var(--color-secondary-2);
 	border-radius: 15px;
 	text-align: center;
 	width: 455px;
+	height: fit-content;
 	position: relative;
 }
 
 .advice__header {
 	color: var(--color-primary-2);
 	font-size: 1.3rem;
-	font-weight: 400;
+	letter-spacing: 2px;
+	font-weight: 500;
 }
 .advice__text {
 	font-size: var(--font-size-1);
 	padding-block: 32px;
 	color: var(--white);
+	font-weight: 800;
 	text-align: center;
+	color: var(--color-primary-1);
 }
 
 .pause {

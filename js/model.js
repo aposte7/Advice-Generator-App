@@ -27,12 +27,9 @@ export const fetchAdvice = async function (
 		}
 
 		const data = await response.json()
-		console.log("API Response Data:", data) // Log the response data
-
 		state.advice = createAdviceObject(data)
-		console.log("fetching") // Should log when fetching begins
-		successCallback(state.advice)
-		console.log("done fetching") // Should log when fetching is complete
+
+		successCallback(state.advice, state.advice.id)
 	} catch (error) {
 		console.error("Error occurred:", error) // Log detailed error message
 		state.error = error.message

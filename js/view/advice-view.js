@@ -1,18 +1,14 @@
 class AddAdvice {
 	_parentElement = document.querySelector("#root")
-	_cardElement = document.querySelector("#advice")
-	_adviceId = document.querySelector(".header-number")
-	_adviceText = document.querySelector(".advice__text")
+	_formElement = null // Initialize as null
 	_data
 
 	_showError() {}
 	_showLoading() {}
 
 	addHandlerRender(handler) {
-		console.log("handler added")
 		window.addEventListener("load", handler)
 	}
-
 	_generateMarkup() {
 		return ` 
         <div id="advice">
@@ -27,13 +23,15 @@ class AddAdvice {
                 <img src="/images/pattern-divider-desktop.svg"
                     alt="Description of SVG"/>
             </span>
-               
-            <button class="btn">
-                <img src="/images/icon-dice.svg" alt="Description of SVG" />
-            </button>
+            <form class="form">
+                <button class="btn">
+                    <img src="/images/icon-dice.svg" alt="Description of SVG" />
+                </button>
+            </form>
         </div>
-`
+		`
 	}
+
 	_clear() {
 		this._parentElement.innerHTML = ""
 	}
@@ -44,6 +42,8 @@ class AddAdvice {
 		const markup = this._generateMarkup()
 		this._clear()
 		this._parentElement.insertAdjacentHTML("afterbegin", markup)
+
+		// Re-select the form element and add the event listener
 	}
 }
 

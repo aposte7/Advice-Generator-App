@@ -1,3 +1,6 @@
+import icon1 from "/images/pattern-divider-desktop.svg"
+import icon2 from "/images/icon-dice.svg"
+
 class AddAdvice {
 	_parentElement = document.querySelector("#root")
 	_formElement = null // Initialize as null
@@ -20,12 +23,12 @@ class AddAdvice {
                 ${this._data.advice}
             </p>
             <span class="pause">
-                <img src="./images/pattern-divider-desktop.svg"
+                <img src="${icon1}"
                     alt="Description of SVG"/>
             </span>
             <form class="form">
                 <button class="btn">
-                    <img src="./images/icon-dice.svg" alt="Description of SVG" />
+                    <img src="${icon2}" alt="Description of SVG" />
                 </button>
             </form>
         </div>
